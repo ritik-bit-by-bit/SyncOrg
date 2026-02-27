@@ -6,15 +6,16 @@ export async function POST(request: Request) {
     
     try {
         await dbConnect();
-        const { username, code } = await request.json();
-        const decodedUsername = decodeURIComponent(username);
+        const { email, code } = await request.json();
+        // const decodedUsername = decodeURIComponent(email);
         
-        console.log("Verifying code for user:", decodedUsername, "with code:", code);
+        console.log("Verifying code for user:", email, "with code:", code);
         
-        const user = await UserModel.findOne({ username: decodedUsername });
+        const user = await UserModel.findOne(email );
+        console.log("user",user);
         
         if (!user) {
-            console.log("User not found:", decodedUsername);
+            console.log("User not found:", email);
             return Response.json({
                 success: false,
                 message: "User not found"

@@ -77,12 +77,6 @@ export default function DashboardLayout({
       icon: Home,
     },
     {
-      title: 'Messages',
-      url: '/dashboard',
-      icon: MessageSquare,
-      hash: '#messages',
-    },
-    {
       title: 'Analytics',
       url: '/dashboard/analytics',
       icon: BarChart3,

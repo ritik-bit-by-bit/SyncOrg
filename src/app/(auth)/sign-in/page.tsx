@@ -93,7 +93,7 @@ const Page = () => {
 
       {/* Main content */}
       <div 
-        className="w-full max-w-md p-10 sm:p-12 rounded-2xl shadow-2xl z-10 relative"
+        className="w-full max-w-md max-h-180 p-10 sm:p-12 rounded-2xl shadow-2xl z-10 relative"
         style={{
           background: 'rgba(255, 255, 255, 0.15)',
           backdropFilter: 'blur(20px)',

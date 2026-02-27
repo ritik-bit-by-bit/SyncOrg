@@ -1,5 +1,6 @@
 import dbConnect from '@/lib/dbConnect';
 import LinkModel from '@/model/link';
+import mongoose from 'mongoose';
 import { getServerSession } from 'next-auth/next';
 import { authOptions } from '../../auth/[...nextauth]/options';
 import { User } from 'next-auth';
@@ -19,7 +20,7 @@ export async function GET(request: Request) {
   
   try {
     const links = await LinkModel.find({
-      ownerUserId: user._id
+      ownerUserId: new mongoose.Types.ObjectId(user._id)
     }).sort({ createdAt: -1 });
     
     // Check which links are expired

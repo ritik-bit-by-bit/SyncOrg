@@ -17,7 +17,7 @@ function Navbar() {
           className="flex flex-col sm:flex-row justify-between items-center p-4 sm:p-6 rounded-2xl"
         >
           <Link href="/" className="font-heading text-2xl sm:text-3xl font-bold tracking-tight text-white hover:text-indigo-200 transition-colors drop-shadow-lg">
-            True Feedback
+          SyncOrg
           </Link>
           {session ? (
             <div className="flex flex-col sm:flex-row items-center space-y-3 sm:space-y-0 sm:space-x-4">

@@ -32,7 +32,7 @@ export default function Home() {
         <section className="text-center mb-12 max-w-3xl w-full">
           <div className="mb-6">
             <SplitText
-              text="Discover Anonymous Feedback"
+              text="Managing your organization hassle free"
               className="font-heading text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white tracking-tight mb-4 block w-full drop-shadow-2xl"
               delay={100}
               duration={0.6}
@@ -48,7 +48,7 @@ export default function Home() {
           </div>
           <div className="mt-4">
             <SplitText
-              text="True Feedback - Share your thoughts with complete privacy"
+              text="SyncOrg - Manage your Organization efficiently"
               className="text-lg sm:text-xl lg:text-2xl text-blue-900 leading-relaxed block w-full font-semibold tracking-wide drop-shadow-md"
               delay={50}
               duration={0.6}

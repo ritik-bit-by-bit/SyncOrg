@@ -1,5 +1,6 @@
 import dbConnect from '@/lib/dbConnect';
 import LinkModel from '@/model/link';
+import mongoose from 'mongoose';
 import { getServerSession } from 'next-auth/next';
 import { authOptions } from '../../auth/[...nextauth]/options';
 import { User } from 'next-auth';
@@ -41,7 +42,7 @@ export async function POST(request: NextRequest) {
     
     const link = new LinkModel({
       linkId,
-      ownerUserId: user._id,
+      ownerUserId: new mongoose.Types.ObjectId(user._id),
       mode: mode || 'message',
       expiresAt: expirationDate,
       maxMessages: maxMessages || null,

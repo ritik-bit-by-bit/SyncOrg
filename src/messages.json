@@ -1,12 +1,42 @@
 [
   {
-    "title": "Welcome!",
-    "content": "This is your first anonymous message.",
-    "received": "2024-06-01"
+    "title": "New Member Added",
+    "content": "A new team member has joined your organization.",
+    "received": "2026-02-01"
   },
   {
-    "title": "Feedback Received",
-    "content": "Your feedback is valuable to us!",
-    "received": "2024-06-02"
+    "title": "Task Assigned",
+    "content": "You have been assigned a new task. Check your dashboard.",
+    "received": "2026-02-05"
+  },
+  {
+    "title": "Project Updated",
+    "content": "A project you are part of has been updated.",
+    "received": "2026-02-10"
+  },
+  {
+    "title": "Deadline Reminder",
+    "content": "You have an upcoming deadline. Stay on track!",
+    "received": "2026-02-15"
+  },
+  {
+    "title": "Meeting Scheduled",
+    "content": "A new meeting has been scheduled. Check your calendar.",
+    "received": "2026-02-18"
+  },
+  {
+    "title": "System Update",
+    "content": "SyncOrg has been updated with new features.",
+    "received": "2026-02-20"
+  },
+  {
+    "title": "Password Changed",
+    "content": "Your account password was successfully updated.",
+    "received": "2026-02-22"
+  },
+  {
+    "title": "Weekly Summary",
+    "content": "Your weekly activity report is ready to view.",
+    "received": "2026-02-24"
   }
-] 
+]
